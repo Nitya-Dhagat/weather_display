@@ -14,7 +14,7 @@ You can view the live demo of the app [here](#) (Add a link to a hosted version 
 
 ## Screenshots
 
-![Weather App Screenshot](#) (Add a screenshot of your app here)
+![Weather App Screenshot](https://console.cloudinary.com/pm/c-34d78a43fb161aeeb3641e4b1665a0/media-explorer?assetId=c9232ca1a2e2935480ef0fa7ae66d5c8) (Add a screenshot of your app here)
 
 ## Getting Started
 
