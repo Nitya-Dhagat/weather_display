@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(145deg, #84a9ac, #f19c42); /* Light bluish-red gradient */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .weather-container {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 40px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    .weather-container h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .weather-container input {
+      width: 80%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .weather-container input:focus {
+      border-color: #f19c42;
+      box-shadow: 0 0 10px rgba(241, 156, 66, 0.5);
+    }
+
+    .weather-container button {
+      width: 85%;
+      padding: 10px;
+      border: none;
+      background-color: #f19c42; /* Warm color for button */
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .weather-container button:hover {
+      background-color: #e6892d;
+    }
+
+    .weather-container .temperature {
+      font-size: 36px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .error-message {
+      color: #ff4d4d;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <h1>Weather App</h1>
+    <label for="city">Enter city name:</label>
+    <input type="text" id="city" placeholder="e.g., London" />
+    <button onclick="getCoordinates()">Get Weather</button>
+    <div id="fetched_temperature" class="temperature"></div>
+    <div id="error_message" class="error-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
