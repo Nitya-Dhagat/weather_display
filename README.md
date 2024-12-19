@@ -39,3 +39,9 @@ To run the app locally, ensure you have the following:
 
    ```bash
    open index.html
+
+
+```terminal
+git clone https://github.com/Nitya-Dhagat/weather-app.git
+cd weather-app
+open index.html
